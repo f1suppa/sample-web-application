@@ -1,21 +1,21 @@
-ipeline {
-
+pipeline{
     agent any
-    stages {
-        stage('init'){
+    stages{
+        stage("A"){
             steps{
-                sh 'echo this first stage'
-            }
+                echo "========executing A========"
+            }         
         }
-        stage('secondstage'){
-            steps{
-                sh 'echo 2nd stage'
-            }
+    }  
+    post{
+        always{
+            echo "========always========"
         }
-        stage('3stage'){
-            steps{
-                sh 'echo this 3rd stage'
-            }
+        success{
+            echo "========pipeline executed successfully ========"
+        }
+        failure{
+            echo "========pipeline execution failed========"
         }
     }
 }
