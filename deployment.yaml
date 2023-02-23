@@ -11,7 +11,7 @@ spec:
       labels:
         app: devops-training
     spec:
-      containers:
+    containers:
       - name: devops-training
         image: deekshithsn/devops-training:docker_tag
         command: ["/bin/sh"]
