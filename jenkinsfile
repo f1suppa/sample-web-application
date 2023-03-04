@@ -29,4 +29,8 @@ pipeline{
             echo "========pipeline execution failed========"
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3202eecd425d74e3dc0e67e8b617a7f45394999c
