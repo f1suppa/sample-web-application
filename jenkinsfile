@@ -5,6 +5,8 @@ pipeline{
             agent {
                 docker {
                     image 'maven'
+                    sh "docker version" // DOCKER_CERT_PATH is automatically picked up by the Docker client
+
                 }
             }
             steps{
